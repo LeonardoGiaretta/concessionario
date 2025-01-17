@@ -1,6 +1,6 @@
     
     function cerca(){
-        document.getElementById('cerca').addEventListener('click', function (event) {
+        document.getElementById('cerca').addEventListener('keyup', function (event) {
             event.preventDefault();
         
             const marca = document.getElementById('marca').value;
