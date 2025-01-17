@@ -3,28 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Concessionario</title>
 </head>
 <body>
-
     <h2 style="text-align: center">CONCESSIONARIO</h2>
-    
-    <form action="" method="post">
-        <div style="text-align: center"  name="barra di Ricerca">
-      
-        </div>
-    </form>
-
-    <form action="">
+    <form>
         <div style="text-align: center">
-            <label for="">
-                Inserisci la marca : <input type="text" placeholder="Marca...">
+            <label>
+                Inserisci la marca: <input type="text" id="marca" placeholder="Marca...">
             </label>
-         <br><br>
-            <label for="">
-                inserisci il Modello : <input type="text" placeholder="Modello...">
+            <br><br>
+            <label>
+                Inserisci il modello: <input type="text" id="modello" placeholder="Modello...">
             </label>
-        <br><br>
+            <br><br>
             <label for="annoProduzione">Anno di Produzione:</label>
             <select id="annoProduzione">
                 <option value="" disabled selected>Seleziona un anno</option>
@@ -44,21 +36,19 @@
                 <option value="" disabled selected>Seleziona una fascia</option>
                 <option value="0-5000">0 - 5.000€</option>
                 <option value="5001-10000">5.001€ - 10.000€</option>
-                <option value="10001-20000">10.001€ - 20.000€</option>
-                <option value="20001-50000">20.001€ - 50.000€</option>
-                <option value="50001+">Oltre 50.000€</option>
+                <option value="10001-15000">10.001€ - 15.000€</option>
+                <option value="15001-20000">15.001€ - 20.000€</option>
+                <option value="20001-25000">20.001€ - 25.000€</option>
+                <option value="25001-30000">25.001€ - 30.000€</option>
+                <option value="30001-35000">30.001€ - 35.000€</option>
+                <option value="35001-40000">35.001€ - 40.000€</option>
+                <option value="40001+">Oltre 40.000€</option>
             </select>
             <br><br>
-        
-            <button id="ricerca">Cerca</button>
-
-            <script src="script.js"></script>
+            <button id="cerca">Cerca</button>
         </div>
     </form>
-   
-    
-
-
-
+    <div id="dati-auto" style="text-align: center; margin-top: 20px;"></div>
+    <script src="script.js"></script>
 </body>
 </html>
